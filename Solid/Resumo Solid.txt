@@ -1,0 +1,17 @@
+Os principios Solid Devem ser aplicados para se obter os beneficios
+da orientação a objetos tais como:
+
+Seja facil de se manter, adaptar e se ajustar às alterações de escopo
+Seja testavel e de facil entendimento 
+Seja extensivel para alterações com o menor esforço necessário
+Que forneça o máximo de reaproveitamento
+Que permaneça o máximo de tempo possivel em utilização 
+
+Utilizando os principios SOLID é póssivel evitar problemas muito 
+comuns:
+
+Dificuldade na testabilidade /criação de testes de unidade
+Código macarrônico sem estrutura ou padrão 
+Dificuldades de isolar funcionalidades
+Duplicação de código, uma alteração precisa ser feita em N pontos
+Fragilidade o código quebra facilmente em vários pontos após alguma mudança

@@ -1,0 +1,82 @@
+Pilares Fundamentais da OOP
+
+Estado e Comportamento, Encapsulamento, Abstração, Polimorfismo,
+Herança.
+
+É essencial possuir um claro conhecimento dos princípios da orientação 
+a objetos para poder aplicar as melhores práticas de design de código, padrões
+e abordagens de arquitetura
+
+Na orientação a objetos devemos sempre buscar o baixo acoplamento e a alta
+coesão entre os objetos
+
+Acoplamento:
+ Uma dependência direta entre um objeto e outro. Quando um objeto muda o outro
+muda por consequência.
+
+Coesão:
+ Objetos executando uma única responsabilidade livres de uma dependência direta
+com um outro objeto.
+
+Classe:
+A classe é uma estrutura de codigo que tem a função de mapear
+um objeto do mundo real
+
+Objeto:
+ é quando vc tem a sua classe sendo instanciada, ou seja ela passa a ser
+representada na memoria como um objeto 
+
+Estado: Em OOP é representado dentre as propriedades de uma classe
+
+Comportamento: são métodos que geram uma nova informação ou processam uma informação 
+atráves da propria classe, ou que alteram o estado da entidade, ou seja modificam os
+valores das propriedades da classe
+
+Herança
+A herança permite que as classes compartilhem seus atributos, métodos e outros membros da classe
+entre si. Para a ligação entre as classes, a herança adota um relacionamento esquematizado
+hierarquicamente
+na hora de utilizar herança sempre pensar se a classe que vai ser herdada "é um" a classe pai
+exemplo Funcionario "é uma" Pessoa, se o "é um" não fizer sentido provavelmente voce não deveria
+usar a herança
+
+Abstração:
+ A abstração tem o conceito de voce especializar algo em uma classe que estiver herdando
+e fornecer formas genericas de comportamento para qualquer grupo de classes que herde da super classe
+
+Polimorfismo(multiplos comportamentos)
+Polimorfismo é o principio pelo qual duas ou mais classes derivadas de uma mesma 
+superclasse podem invocar métodos que tem a mesma identificação(assinatura) mas comportamentos distintos,
+especializados para cada classe derivada, usando para tanto uma referencia a um objeto do tipo da superclasse
+
+Encapsulamento:
+É voce "esconder" certos comportamentos que vc vai dizer que são privados da sua classe
+para expor outro de alto nivel que vai fazer uso deles, nem sempre quer expor métodos pq ele
+pode ser usado de maneira errada 
+ 
+ modificadores de acesso:
+  public: O acesso é publico sem restrições
+  protected: O acesso é limitado a classe e seus derivados 
+  internal: O acesso é limitado apenas ao assembly(dll =  project)	
+  protected internal: acesso limitado ao assembly ou a classes derivadas
+  private: o acesso é limitado apenas a classe
+  private protected: O acesso é limitado apenas a classe pai ou para 
+  classes derivadas que estão no mesmo assembly
+                       
+Interface x Implementação
+
+A interface é uma especie de um contrato, então toda a classe que implementa uma interface 
+ela é obrigada a implementar os métodos especificados na interface, isso pode confundir um pouco 
+com uma classe abstrata que vai fazer a mesma obrigatoriedade, porém o uso de uma interface não pode ser 
+comparado com o uso de uma classe abstrata porque uma classe abstrata além de forçar a implementação de métodos 
+ela tambem implementa alguns comportamentos que podem ser derivados, no caso de uma interface ela é um contrato simples 
+
+Sempre prefira o uso de interface ao inves de usar uma classe concreta, porque uma classe concreta pode mudar, e quebrar
+em varios pontos que usam dessa classe, com uma interface voce pode abstrair o uso dessa classe, com o uso de injeção de dependencia 
+
+Herança x Composição 
+O ideal da herança é sempre se perguntar, a classe que voce está herdando é a classe Pai/herdada, ex:"a classe PessoaFisica é uma classe Pessoa", 
+além disso o ideal é pensar se os atributos e métodos da classe Pai atendem perfeitamente a classe Filho
+Prefira sempre composição ao inves de herança pelo fato de herança causar um forte acoplamento entre as classes
+ 
+
